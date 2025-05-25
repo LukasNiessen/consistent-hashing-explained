@@ -85,23 +85,7 @@ This was an ELI5 but the reality is not much harder.
 
 With the _"circle strategy"_ from above we distribute the data evenly across our servers and when we add new servers, not much of the data needs to relocate. This is exactly the goal of consistent hashing.
 
-## The Magic Trick: Virtual Friends
-
-What if Alice is really hungry and wants more pizza? We can put "Virtual Alice" in multiple spots around the circle!
-
-```
-    Alice-1
-      🍕
-Alice-3 ○ Alice-2
-      🍕
-    Alice-4
-
-Now Alice gets pizza from 4 different "zones"!
-```
-
-This makes sure everyone gets a fair amount of pizza, even when friends leave the party.
-
-## In a Simplified Nutshell
+## In a "Simplified Nutshell"
 
 1. **Make a circle** (hash ring)
 2. **Put servers around the circle** (like friends around pizza)
